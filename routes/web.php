@@ -1,6 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TrainingController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\TrainingController as AdminTrainingController;
+use App\Http\Controllers\Admin\TrainerController;
+use App\Http\Controllers\Admin\BookingController as AdminBookingController;
 use Illuminate\Support\Facades\Route;
 
 /*

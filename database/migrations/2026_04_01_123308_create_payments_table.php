@@ -16,9 +16,9 @@ return new class extends Migration
             $table->foreignId('booking_id')->constrained()->onDelete('cascade');
             $table->decimal('amount', 8, 2);
             $table->string('payment_method');
-            $table->string('trasaction_id')->nullable();
-            $table->enum('status', ['penting', 'success', 'failed', 'refunded'])->default('pending');
-            $table->json('payment_data')->nullable();
+            $table->string('transaction_id')->nullable();
+            $table->enum('status', ['pending', 'success', 'failed', 'refunded'])->default('pending');
+            $table->text('payment_data')->nullable();
             $table->timestamps();
         });
     }

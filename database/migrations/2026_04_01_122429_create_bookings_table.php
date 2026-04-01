@@ -19,7 +19,7 @@ return new class extends Migration
             $table->dateTime('booking_datetime');
             $table->enum('status', ['pending', 'comfirmed', 'cancelled', 'completed'])->default('pending');
             $table->enum('payment_status', ['unpaid', 'paid', 'refunded'])->default('unpaid');
-            $table->decimail('amount', 8, 2);
+            $table->decimal('amount', 8, 2);
             $table->timestamps();
         });
     }
